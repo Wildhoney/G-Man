@@ -16,49 +16,26 @@ Source: [ViaEstelar](http://viaestelar.deviantart.com/) on [DeviantArt.com](http
 
 ## Getting Started
 
-G-Man follows a format that allows a readable format in both [GitHub](https://github.com/) and the CLI. By following the standards your output will look something similar to the following:
+G-Man follows a format that allows a readable format in both [GitHub](https://github.com/) and the CLI. By following the standards your output will look something similar to the following
 
 ![G-Man Screenshot v0.1.0](http://i.imgur.com/ae4NA5G.png)
 
-### Documentation Title
+Please follow the [example for the G-Man documentation](https://raw.githubusercontent.com/Wildhoney/G-Man/master/documentation/G-Man.md) in creating your own documentation files.
 
-When the developer opens the documentation page they will want to know what they're looking at quick glance, for this we specify a main header:
+When the developer types `gman` in the root of your application, G-Man will cleverly find all of your documentation files and enumerate them to the developer. Developers can also perform searches on your G-Man documentation &ndash; all from the command prompt, and without you having to do anything special!
 
-```
-# G-Man Documentation
-```
+## Searching Documentation
 
-Underneath the documentation header you can specify the responsibility and any other information you feel necessary.
+As a developer you're likely to want information on a given method. Using G-Man you can locate the documentation for a function by specifying the `gman -f methodName` command &ndash; where `methodName` is the function you would like further information about. G-Man will iterate over the documentation to discover the files which contain your desired method &ndash; if only one file has the method then that is output, otherwise you'll be given a choice.
 
-```
-# G-Man Documentation
+## YAML Configuration
+ 
+Using the `.gman.yaml` file you can modify default G-Man parameters.
 
-Responsible for providing the entry point to the G-Man documentation.
-```
+Currently G-Man supports the `directory` property which you can modify to alter the documentation location.
 
-We then begin specifying the methods present in the related file followed by the methods themselves.
+Configuration parameters are specified in the traditional YAML way:
 
-```
-## Methods
-
-### renderTemplate
-```
-
-Underneath the `renderTemplate` method we will document its parameters &ndash; specifying additional information between asterisks: `*(private)*`.
-
-```
-## Methods
-
-### renderTemplate
-    
- * `firstParam` *{String}* Name of your self-invoking method;
- * `secondParam` *{Function}* Optional callback that will be invoked after success;
-```
-
-We can also specify the responsibility of the method by adding another header to the documentation.
-
-```
-### specifyExitCallback *(private)*
-
-#### Responsible for attaching an event to the exit process.
+```yaml
+directory: documentation
 ```
