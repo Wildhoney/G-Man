@@ -57,12 +57,6 @@
         return colour.bold(text);
     };
 
-    require('fs').readFile('documentation/G-Man.md', function (err, data) {
-
-        if (err) throw err;
-
-        console.log(marked(data.toString(), { renderer: renderer }));
-
-    });
+    exports.GManRenderer = renderer;
 
 })();

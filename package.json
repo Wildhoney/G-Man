@@ -23,6 +23,8 @@
   "homepage": "https://github.com/Wildhoney/G-Man",
   "dependencies": {
     "cli-color": "^0.3.2",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "minimist": "^0.2.0",
+    "pretty-error": "^1.1.1"
   }
 }
