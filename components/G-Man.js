@@ -52,7 +52,7 @@
         }
 
         // Parse the MD document and output it to the CLI.
-        console.log(marked(data.toString(), { renderer: renderer.GManRenderer }));
+        console.log('\n' + marked(data.toString(), { renderer: renderer.GManRenderer }));
 
     });
 
