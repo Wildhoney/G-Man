@@ -6,6 +6,9 @@
   "scripts": {
     "test": "gulp test"
   },
+  "bin": {
+    "gman": "components/G-Man.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Wildhoney/G-Man.git"
