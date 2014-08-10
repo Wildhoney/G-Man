@@ -38,12 +38,20 @@
      */
     var yaml = require('js-yaml');
 
+    /**
+     * @property defaultConfig
+     * @type {Object}
+     */
+    var defaultConfig = {
+        directory: 'docs'
+    };
+
     // Parse the YAML document and determine the documentation directory.
-    var config        = yaml.safeLoad(fileSystem.readFileSync('.gman.yml', 'utf8')),
-        docDirectory  = config.directory || 'docs';
+    var fileExists    = fileSystem.existsSync('.gman.yml'),
+        config        = fileExists ? yaml.safeLoad(fileSystem.readFileSync('.gman.yml', 'utf8')) : defaultConfig;
 
     // Read the Markdown documentation based on the passed argument.
-    fileSystem.readFile(docDirectory + '/' + args._[0] + '.md', function (error, data) {
+    fileSystem.readFile(config.directory + '/' + args._[0] + '.md', function (error, data) {
 
         if (error) {
 

@@ -4,12 +4,12 @@ Responsible for providing the entry point to the G-Man documentation.
 
 ## Methods
 
-### Render()
+### renderTemplate
     
  * `firstParam` *{String}* Name of your self-invoking method;
  * `secondParam` *{Function}* Optional callback that will be invoked after success;
     
-### Exit() *(private)*
+### specifyExitCallback *(private)*
 
 #### Responsible for attaching an event to the exit process.
 
