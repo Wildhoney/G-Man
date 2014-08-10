@@ -31,13 +31,17 @@
     var PrettyError = require('pretty-error');
 
     /**
-     * @property documentationDirectory
-     * @type {String}
+     * @property yaml
+     * @type {Object}
      */
-    var documentationDirectory = 'documentation';
+    var yaml = require('js-yaml');
+
+    // Parse the YAML document and determine the documentation directory.
+    var config        = yaml.safeLoad(fileSystem.readFileSync('.gman.yml', 'utf8')),
+        docDirectory  = config.directory || 'docs';
 
     // Read the Markdown documentation based on the passed argument.
-    fileSystem.readFile(documentationDirectory + '/' + args._[0] + '.md', function (error, data) {
+    fileSystem.readFile(docDirectory + '/' + args._[0] + '.md', function (error, data) {
 
         if (error) {
 
