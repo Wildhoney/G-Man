@@ -1,5 +1,7 @@
 (function GManRenderer() {
 
+    "use strict";
+
     /**
      * @property marked
      * @type {Object}

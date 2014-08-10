@@ -1,5 +1,7 @@
 (function GMan() {
 
+    "use strict";
+
     /**
      * @property args
      * @type {Object}

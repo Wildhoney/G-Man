@@ -4,7 +4,7 @@
   "description": "None.",
   "main": "bin/G-Man.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,10 @@
   "homepage": "https://github.com/Wildhoney/G-Man",
   "dependencies": {
     "cli-color": "^0.3.2",
+    "gulp": "^3.8.7",
+    "gulp-jshint": "^1.8.4",
     "js-yaml": "^3.1.0",
+    "jshint-stylish": "^0.4.0",
     "marked": "^0.3.2",
     "minimist": "^0.2.0",
     "pretty-error": "^1.1.1"
