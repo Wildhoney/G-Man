@@ -25,7 +25,8 @@
     var tasks = {
 
         /**
-         * @property lint
+         * @method lint
+         * @return {void}
          */
         lint: function() {
             var files = ['./components/*.js'];
