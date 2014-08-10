@@ -27,28 +27,16 @@
     var renderer = require('./Renderer.js');
 
     /**
+     * @property config
+     * @type {Object}
+     */
+    var config = require('./Configuration.js').GManConfiguration;
+
+    /**
      * @property PrettyError
      * @type {Function}
      */
     var PrettyError = require('pretty-error');
-
-    /**
-     * @property yaml
-     * @type {Object}
-     */
-    var yaml = require('js-yaml');
-
-    /**
-     * @property defaultConfig
-     * @type {Object}
-     */
-    var defaultConfig = {
-        directory: 'docs'
-    };
-
-    // Parse the YAML document and determine the documentation directory.
-    var fileExists    = fileSystem.existsSync('.gman.yml'),
-        config        = fileExists ? yaml.safeLoad(fileSystem.readFileSync('.gman.yml', 'utf8')) : defaultConfig;
 
     // Read the Markdown documentation based on the passed argument.
     fileSystem.readFile(config.directory + '/' + args._[0] + '.md', function (error, data) {
