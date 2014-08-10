@@ -44,6 +44,7 @@
 
         files.forEach(function forEach(file) {
 
+            // Output the value for each of the files.
             process.stdout.write('  ' + darkGrey('- ') + yellow(file) + '\n');
             process.stdout.write('    ' + lightGrey('gman ' + path.basename(file, '.md')) + '\n\n')
 

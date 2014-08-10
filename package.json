@@ -1,6 +1,6 @@
 {
   "name": "gman",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "None.",
   "main": "bin/G-Man.js",
   "scripts": {
