@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Wildhoney/G-Man/issues"
   },
-  "homepage": "https://github.com/Wildhoney/G-Man"
+  "homepage": "https://github.com/Wildhoney/G-Man",
+  "dependencies": {
+    "cli-color": "^0.3.2",
+    "marked": "^0.3.2"
+  }
 }

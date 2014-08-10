@@ -3,7 +3,7 @@ G-Man
 
 ![Travis](https://api.travis-ci.org/Wildhoney/G-Man.png)
 &nbsp;
-![npm](https://badge.fury.io/js/ng-video.png)
+![npm](https://badge.fury.io/js/gman.png)
 
 * **npm:** `npm install gman -g`
 
