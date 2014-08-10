@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 (function GMan() {
 
     "use strict";
