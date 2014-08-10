@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.29
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add spec="." args=[".",null]
+8 verbose cache add local package /Users/atimberlake/Webroot/G-Man
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/atimberlake/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/atimberlake/.npm/gman/0.1.2/package.tgz', '.' ]
+12 verbose tarball /Users/atimberlake/.npm/gman/0.1.2/package.tgz
+13 verbose folder .
+14 info prepublish gman@0.1.2
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/atimberlake/.npm/1f1177db-tar.lock
+17 silly lockFile c294a3ea-rlake-npm-gman-0-1-2-package-tgz tar:///Users/atimberlake/.npm/gman/0.1.2/package.tgz
+18 verbose lock tar:///Users/atimberlake/.npm/gman/0.1.2/package.tgz /Users/atimberlake/.npm/c294a3ea-rlake-npm-gman-0-1-2-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile c294a3ea-rlake-npm-gman-0-1-2-package-tgz tar:///Users/atimberlake/.npm/gman/0.1.2/package.tgz
+22 silly lockFile c294a3ea-rlake-npm-gman-0-1-2-package-tgz tar:///Users/atimberlake/.npm/gman/0.1.2/package.tgz
+23 silly lockFile 7feb4abe-imberlake-npm-gman-0-1-2-package /Users/atimberlake/.npm/gman/0.1.2/package
+24 verbose lock /Users/atimberlake/.npm/gman/0.1.2/package /Users/atimberlake/.npm/7feb4abe-imberlake-npm-gman-0-1-2-package.lock
+25 silly lockFile 7feb4abe-imberlake-npm-gman-0-1-2-package /Users/atimberlake/.npm/gman/0.1.2/package
+26 silly lockFile 7feb4abe-imberlake-npm-gman-0-1-2-package /Users/atimberlake/.npm/gman/0.1.2/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'gman',
+29 silly publish   version: '0.1.2',
+29 silly publish   description: 'None.',
+29 silly publish   main: 'bin/G-Man.js',
+29 silly publish   scripts: { test: 'gulp test' },
+29 silly publish   bin: { gman: 'components/G-Man.js' },
+29 silly publish   repository: { type: 'git', url: 'https://github.com/Wildhoney/G-Man.git' },
+29 silly publish   keywords: [ 'documentation', 'github', 'readme' ],
+29 silly publish   author: { name: 'Adam Timberlake', email: 'adam.timberlake@gmail.com' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/Wildhoney/G-Man/issues' },
+29 silly publish   homepage: 'https://github.com/Wildhoney/G-Man',
+29 silly publish   dependencies:
+29 silly publish    { 'cli-color': '^0.3.2',
+29 silly publish      glob: '^4.0.5',
+29 silly publish      gulp: '^3.8.7',
+29 silly publish      'gulp-jshint': '^1.8.4',
+29 silly publish      inherits: '^2.0.1',
+29 silly publish      'js-yaml': '^3.1.0',
+29 silly publish      'jshint-stylish': '^0.4.0',
+29 silly publish      marked: '^0.3.2',
+29 silly publish      minimatch: '^1.0.0',
+29 silly publish      minimist: '^0.2.0',
+29 silly publish      once: '^1.3.0',
+29 silly publish      'pretty-error': '^1.1.1' },
+29 silly publish   readme: 'G-Man\n===================\n\n![Travis](https://api.travis-ci.org/Wildhoney/G-Man.png)\n&nbsp;\n![npm](https://badge.fury.io/js/gman.png)\n\n* **npm:** `npm install gman -g`\n\nG-Man is a documentation engine which uses [GitHub.com](https://github.com/) as the doc source, and parses Markdown documents to provide an easy way for developers to read documentation. All of the [options in G-Man can be configured](#configuration) with the `.gman.yml` configuration.\n\n![G-Man and Cat](http://wpcdn1.ripten.com/wp-content/uploads/2012/09/gmancat.jpg)<br />\nSource: [ViaEstelar](http://viaestelar.deviantart.com/) on [DeviantArt.com](http://viaestelar.deviantart.com/art/About-that-cat-319586420).\n\n---\n\n## Getting Started\n\nG-Man follows a format that allows a readable format in both [GitHub](https://github.com/) and the CLI. By following the standards your output will look something similar to the following:\n\n![G-Man Screenshot v0.1.0](http://i.imgur.com/ae4NA5G.png)\n\n### Documentation Title\n\nWhen the developer opens the documentation page they will want to know what they\'re looking at quick glance, for this we specify a main header:\n\n```\n# G-Man Documentation\n```\n\nUnderneath the documentation header you can specify the responsibility and any other information you feel necessary.\n\n```\n# G-Man Documentation\n\nResponsible for providing the entry point to the G-Man documentation.\n```\n\nWe then begin specifying the methods present in the related file followed by the methods themselves.\n\n```\n## Methods\n\n### renderTemplate\n```\n\nUnderneath the `renderTemplate` method we will document its parameters &ndash; specifying additional information between asterisks: `*(private)*`.\n\n```\n## Methods\n\n### renderTemplate\n    \n * `firstParam` *{String}* Name of your self-invoking method;\n * `secondParam` *{Function}* Optional callback that will be invoked after success;\n```\n\nWe can also specify the responsibility of the method by adding another header to the documentation.\n\n```\n### specifyExitCallback *(private)*\n\n#### Responsible for attaching an event to the exit process.\n```',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '29ac04af1e717ac19e331557af3d0bd307613269',
+29 silly publish   _id: 'gman@0.1.2',
+29 silly publish   _shasum: 'd325ffe2427a03951f3443aa071ae63dac39cb49',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name gman
+31 verbose mapToRegistry uri https://registry.npmjs.org/gman
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request where is /gman
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id a5933da396b531dc
+36 verbose request url raw /gman
+37 verbose request url resolving [ 'https://registry.npmjs.org/', './gman' ]
+38 verbose request url resolved https://registry.npmjs.org/gman
+39 verbose request where is https://registry.npmjs.org/gman
+40 verbose request setting basic auth
+41 info trying registry request attempt 1 at 22:18:01
+42 http PUT https://registry.npmjs.org/gman
+43 http 403 https://registry.npmjs.org/gman
+44 verbose headers { date: 'Sun, 10 Aug 2014 21:18:03 GMT',
+44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '5175',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'x-served-by': 'cache-lcy1124-LCY',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1407705482.535689,VS0,VE775',
+44 verbose headers   'keep-alive': 'timeout=10, max=50',
+44 verbose headers   connection: 'Keep-Alive' }
+45 error publish Failed PUT 403
+46 error Error: forbidden cannot modify pre-existing version: 0.1.2
+46 error old={"name":"gman","version":"0.1.2","description":"None.","main":"bin/G-Man.js","scripts":{"test":"gulp test"},"repository":{"type":"git","url":"https://github.com/Wildhoney/G-Man.git"},"keywords":["documentation","github","readme"],"author":{"name":"Adam Timberlake","email":"adam.timberlake@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/Wildhoney/G-Man/issues"},"homepage":"https://github.com/Wildhoney/G-Man","dependencies":{"cli-color":"^0.3.2","glob":"^4.0.5","gulp":"^3.8.7","gulp-jshint":"^1.8.4","inherits":"^2.0.1","js-yaml":"^3.1.0","jshint-stylish":"^0.4.0","marked":"^0.3.2","minimatch":"^1.0.0","minimist":"^0.2.0","once":"^1.3.0","pretty-error":"^1.1.1"},"gitHead":"3ac773ab71cddfa5f0b0f69705cd804896a3b37f","_id":"gman@0.1.2","_shasum":"51fec4444a0b0e410912eb67899cfb842f21b3af","_from":".","_npmVersion":"2.0.0-alpha-5","_npmUser":{"name":"wildhoney","email":"adam.timberlake@gmail.com"},"maintainers":[{"name":"wildhoney","email":"adam.timberlake@gmail.com"}],"dist":{"shasum":"51fec4444a0b0e410912eb67899cfb842f21b3af","tarball":"http://registry.npmjs.org/gman/-/gman-0.1.2.tgz"}}
+46 error new={"name":"gman","version":"0.1.2","description":"None.","main":"bin/G-Man.js","scripts":{"test":"gulp test"},"bin":{"gman":"components/G-Man.js"},"repository":{"type":"git","url":"https://github.com/Wildhoney/G-Man.git"},"keywords":["documentation","github","readme"],"author":{"name":"Adam Timberlake","email":"adam.timberlake@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/Wildhoney/G-Man/issues"},"homepage":"https://github.com/Wildhoney/G-Man","dependencies":{"cli-color":"^0.3.2","glob":"^4.0.5","gulp":"^3.8.7","gulp-jshint":"^1.8.4","inherits":"^2.0.1","js-yaml":"^3.1.0","jshint-stylish":"^0.4.0","marked":"^0.3.2","minimatch":"^1.0.0","minimist":"^0.2.0","once":"^1.3.0","pretty-error":"^1.1.1"},"readme":"G-Man\u000a===================\u000a\u000a![Travis](https://api.travis-ci.org/Wildhoney/G-Man.png)\u000a&nbsp;\u000a![npm](https://badge.fury.io/js/gman.png)\u000a\u000a* **npm:** `npm install gman -g`\u000a\u000aG-Man is a documentation engine which uses [GitHub.com](https://github.com/) as the doc source, and parses Markdown documents to provide an easy way for developers to read documentation. All of the [options in G-Man can be configured](#configuration) with the `.gman.yml` configuration.\u000a\u000a![G-Man and Cat](http://wpcdn1.ripten.com/wp-content/uploads/2012/09/gmancat.jpg)<br />\u000aSource: [ViaEstelar](http://viaestelar.deviantart.com/) on [DeviantArt.com](http://viaestelar.deviantart.com/art/About-that-cat-319586420).\u000a\u000a---\u000a\u000a## Getting Started\u000a\u000aG-Man follows a format that allows a readable format in both [GitHub](https://github.com/) and the CLI. By following the standards your output will look something similar to the following:\u000a\u000a![G-Man Screenshot v0.1.0](http://i.imgur.com/ae4NA5G.png)\u000a\u000a### Documentation Title\u000a\u000aWhen the developer opens the documentation page they will want to know what they're looking at quick glance, for this we specify a main header:\u000a\u000a```\u000a# G-Man Documentation\u000a```\u000a\u000aUnderneath the documentation header you can specify the responsibility and any other information you feel necessary.\u000a\u000a```\u000a# G-Man Documentation\u000a\u000aResponsible for providing the entry point to the G-Man documentation.\u000a```\u000a\u000aWe then begin specifying the methods present in the related file followed by the methods themselves.\u000a\u000a```\u000a## Methods\u000a\u000a### renderTemplate\u000a```\u000a\u000aUnderneath the `renderTemplate` method we will document its parameters &ndash; specifying additional information between asterisks: `*(private)*`.\u000a\u000a```\u000a## Methods\u000a\u000a### renderTemplate\u000a    \u000a * `firstParam` *{String}* Name of your self-invoking method;\u000a * `secondParam` *{Function}* Optional callback that will be invoked after success;\u000a```\u000a\u000aWe can also specify the responsibility of the method by adding another header to the documentation.\u000a\u000a```\u000a### specifyExitCallback *(private)*\u000a\u000a#### Responsible for attaching an event to the exit process.\u000a```","readmeFilename":"README.md","gitHead":"29ac04af1e717ac19e331557af3d0bd307613269","_id":"gman@0.1.2","_shasum":"d325ffe2427a03951f3443aa071ae63dac39cb49","_from":".","_npmVersion":"2.0.0-alpha-5","_npmUser":{"name":"wildhoney","email":"adam.timberlake@gmail.com"},"maintainers":[{"name":"wildhoney","email":"adam.timberlake@gmail.com"}],"dist":{"shasum":"d325ffe2427a03951f3443aa071ae63dac39cb49","tarball":"http://registry.npmjs.org/gman/-/gman-0.1.2.tgz"}}: gman
+46 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:313:14)
+46 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:65)
+46 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+46 error     at Request.emit (events.js:98:17)
+46 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+46 error     at Request.emit (events.js:117:20)
+46 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+46 error     at IncomingMessage.emit (events.js:117:20)
+46 error     at _stream_readable.js:929:16
+46 error     at process._tickCallback (node.js:419:13)
+47 error If you need help, you may report this *entire* log,
+47 error including the npm and node versions, at:
+47 error     <http://github.com/npm/npm/issues>
+48 error System Darwin 13.2.0
+49 error command "node" "/usr/local/bin/npm" "publish"
+50 error cwd /Users/atimberlake/Webroot/G-Man
+51 error node -v v0.10.29
+52 error npm -v 2.0.0-alpha-5
+53 verbose exit [ 1, true ]
